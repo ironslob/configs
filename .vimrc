@@ -55,3 +55,5 @@ if !exists("my_auto_commands_loaded")
         augroup END
     endif
 
+" display all empty lines, and tabs
+set listchars=tab:>-,trail:·
