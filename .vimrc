@@ -35,6 +35,8 @@ au BufNewFile dhandler 0r ~/.vim/skel/dhandler.vim
 au BufNewFile syshandler 0r ~/.vim/skel/syshandler.vim
 au BufNewFile autohandler 0r ~/.vim/skel/autohandler.vim
 
+au FileType yaml setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=2
+
 " Protect large files from sourcing and other overhead.
 " Files become read only
 if !exists("my_auto_commands_loaded")
@@ -53,3 +55,5 @@ if !exists("my_auto_commands_loaded")
         augroup END
     endif
 
+" display all empty lines, and tabs
+set listchars=tab:>-,trail:·
