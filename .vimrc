@@ -36,6 +36,7 @@ au BufNewFile syshandler 0r ~/.vim/skel/syshandler.vim
 au BufNewFile autohandler 0r ~/.vim/skel/autohandler.vim
 
 au FileType yaml setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=2
+autocmd FileType html setlocal shiftwidth=2 tabstop=2
 
 " Protect large files from sourcing and other overhead.
 " Files become read only
