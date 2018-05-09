@@ -57,3 +57,4 @@ if !exists("my_auto_commands_loaded")
 
 " display all empty lines, and tabs
 set listchars=tab:>-,trail:·
+set bg=dark
