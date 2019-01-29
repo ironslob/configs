@@ -16,6 +16,8 @@ set foldenable
 set foldlevel=0
 set foldmethod=indent
 set incsearch
+set undofile
+set undodir=~/.vim/undodir
 :let g:html_tag_case='lowercase'
 
 " make sure certain file formats are adhered to
@@ -36,7 +38,7 @@ au BufNewFile syshandler 0r ~/.vim/skel/syshandler.vim
 au BufNewFile autohandler 0r ~/.vim/skel/autohandler.vim
 
 au FileType yaml setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=2
-autocmd FileType html setlocal shiftwidth=2 tabstop=2
+autocmd FileType html setlocal shiftwidth=4 tabstop=4
 
 " Protect large files from sourcing and other overhead.
 " Files become read only
@@ -59,3 +61,6 @@ if !exists("my_auto_commands_loaded")
 " display all empty lines, and tabs
 set listchars=tab:>-,trail:·
 set bg=dark
+
+abbrev pdb import pdb; pdb.set_trace()
+abbrev inspect import code; code.interact(local=dict(globals(), **locals()))
