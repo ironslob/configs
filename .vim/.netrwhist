@@ -1,8 +1,8 @@
 let g:netrw_dirhistmax  =10
 let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/home/matt/work/tide/systems'
-let g:netrw_dirhist_2='/home/matt/work/tide/systems/internal'
-let g:netrw_dirhist_3='/home/matt/work/tide/systems/internal/db'
-let g:netrw_dirhist_4='/home/matt/work/tide/systems/internal'
-let g:netrw_dirhist_5='/home/matt/projects/jwt-test'
-let g:netrw_dirhist_6='/home/matt/projects/cert-auth'
+let g:netrw_dirhist_1='/home/matt/projects/twigdoo/templates/admin'
+let g:netrw_dirhist_2='/home/matt/projects/twigdoo/internal/providers/followups'
+let g:netrw_dirhist_3='/home/matt/projects/twigdoo/templates/admin'
+let g:netrw_dirhist_4='/home/matt/projects/twigdoo/templates/admin/provider'
+let g:netrw_dirhist_5='/home/matt/projects/twigdoo/templates/admin'
+let g:netrw_dirhist_6='/home/matt/projects/twigdoo/templates/admin/provider'
