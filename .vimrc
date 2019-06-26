@@ -38,6 +38,7 @@ au BufNewFile syshandler 0r ~/.vim/skel/syshandler.vim
 au BufNewFile autohandler 0r ~/.vim/skel/autohandler.vim
 
 au FileType yaml setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=2
+au FileType javascript setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=2
 autocmd FileType html setlocal shiftwidth=4 tabstop=4
 
 " Protect large files from sourcing and other overhead.
@@ -62,5 +63,14 @@ if !exists("my_auto_commands_loaded")
 set listchars=tab:>-,trail:·
 set bg=dark
 
+" pick up my aliases
+set shell=zsh\ -l
+
 abbrev pdb import pdb; pdb.set_trace()
 abbrev inspect import code; code.interact(local=dict(globals(), **locals()))
+
+syn match loneNext "^\s*next\s*$"
+hi def link loneNext Error
+
+syn match techDebt "DEBT"
+hi def link techDebt Error
