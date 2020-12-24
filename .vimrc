@@ -18,6 +18,7 @@ set foldmethod=indent
 set incsearch
 set undofile
 set undodir=~/.vim/undodir
+set modeline
 :let g:html_tag_case='lowercase'
 
 " make sure certain file formats are adhered to
@@ -25,6 +26,7 @@ au BufNewFile,BufRead dhandler setf mason
 au BufNewFile,BufRead autohandler setf mason
 au BufNewFile,BufRead *.html setf mason
 au BufNewFile,BufRead syshandler setf perl
+au BufNewFile,BufRead *.coffee setf coffee
 
 " skeleton files
 au BufNewFile *.py 0r ~/.vim/skel/pythonscript.vim
@@ -39,6 +41,7 @@ au BufNewFile autohandler 0r ~/.vim/skel/autohandler.vim
 
 au FileType yaml setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=2
 au FileType javascript setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=2
+"au FileType javascript setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=2
 autocmd FileType html setlocal shiftwidth=4 tabstop=4
 
 " Protect large files from sourcing and other overhead.

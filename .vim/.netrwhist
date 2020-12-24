@@ -1,4 +1,12 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/home/matt/projects/inphota/templates/admin'
-let g:netrw_dirhist_2='/home/matt/projects/inphota/internal/albums'
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/home/matt/projects/retappd/bin'
+let g:netrw_dirhist_8='/home/matt/projects/inphota/alembic'
+let g:netrw_dirhist_7='/home/matt/projects/inphota'
+let g:netrw_dirhist_6='/home/matt/projects/twigdoo-clean/bin'
+let g:netrw_dirhist_5='/home/matt/projects/retappd/internal/aws'
+let g:netrw_dirhist_4='/home/matt/projects/twigdoo-clean/internal/aws'
+let g:netrw_dirhist_3='/home/matt/projects/twigdoo-clean/internal'
+let g:netrw_dirhist_2='/home/matt/projects/twigdoo-clean'
+let g:netrw_dirhist_1='/home/matt/projects/grpc-test'
+let g:netrw_dirhist_0='/home/matt/projects/grpc/examples/protos'
